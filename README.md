@@ -24,7 +24,7 @@ AI-powered prediction system for Henry Hub natural gas prices with **11.9% MAPE*
 ```
 Raw Data (114 features) 
     ↓ 
-Feature Engineering (+30 features)
+Feature Engineering (+10 features)
     ↓
 Correlation Analysis & Selection (50 features)
     ↓
@@ -59,15 +59,13 @@ Ensemble Prediction
 3. **Weak Signal Elimination**: Correlation < 0.1
    - Direct temperature effects (-0.04) → Replaced with seasonal dummies
 
-### Created Features (30 new variables)
+### Created Features (10 new variables)
 | Category | Count | Examples | Business Value |
 |----------|-------|----------|----------------|
-| Time/Seasonality | 8 | heating_season, winter_severity | Capture demand patterns |
-| Fed Rate Derivatives | 4 | fed_rate_change, fed_rate_momentum | Market expectations |
-| Supply-Demand | 5 | supply_demand_ratio, demand_pressure | Core market dynamics |
-| Production Lags | 6 | production_lag_6, rig_count_ma6 | Lead indicator modeling |
-| Economic Interactions | 4 | commodity_dollar_ratio | Complex relationships |
-| Weather | 3 | avg_temperature, temp_range | Demand forecasting |
+| Time/Seasonality | 6 | year, month, quarter, season, month_sin, month_cos | Capture demand patterns |
+| Supply-Demand | 1 | supply_demand_ratio | Core market dynamics |
+| Oil | 1 | avg_oil_price | Comprehensive Energy Market Index |
+| Weather | 2 | avg_temperature, temp_range | Demand forecasting |
 
 ## 🛠️ Technical Implementation
 
