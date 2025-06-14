@@ -280,13 +280,3 @@ predictions = create_ensemble_prediction(train_features, test_features)
 - Natural Gas Market Analysis (EIA, 2024)
 
 ---
-
-## 👨‍💻 About
-**Developed by**: AI Engineer/Data Analytics Team  
-**Company**: INEEJI  
-**Contact**: [Your contact information]  
-**Last Updated**: June 2025
-
----
-
-**⭐ Star this repository if you found it helpful!**
